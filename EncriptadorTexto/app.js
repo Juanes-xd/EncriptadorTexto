@@ -1,3 +1,20 @@
+var btnEncrypt = document.getElementsByClassName("encriptar");
+var btnDecrypt = document.getElementsByClassName("desencriptar");
+
+btnEncrypt.addEventListener("click", function (event) {
+  event.preventDefault();
+  var texto = document.getElementsByName("mensaje").value;
+  texto = encriptador(texto);
+  document.getElementById("salida").value = texto;
+});
+
+btnDecrypt.addEventListener("click", function (event) {
+  event.preventDefault();
+  var texto = document.getElementsByName("mensaje").value;
+  texto = desencriptar(texto);
+  document.getElementById("salida").value = texto;
+});
+
 const encriptador = (text) => {
   if (text.match(/[^a-z\s]/)) {
     return alert("Solo puedes encriptar letras minúsculas sin acentos");
