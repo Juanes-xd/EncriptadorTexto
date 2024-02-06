@@ -1,5 +1,7 @@
 const encriptador = (text) => {
-  text = text.toLowerCase();
+  if (text.match(/[^a-z\s]/)) {
+    return alert("Solo puedes encriptar letras minúsculas sin acentos");
+  }
   let newText = "";
   for (let i = 0; i < text.length; i++) {
     let letra = text[i];
@@ -21,6 +23,9 @@ const encriptador = (text) => {
 };
 
 function desencriptar(text) {
+  if (text.match(/[^a-z\s]/)) {
+    return alert("Solo puedes encriptar letras minúsculas sin acentos");
+  }
   let result = text
     .replace(/(enter)/gi, "e")
     .replace(/(imes)/gi, "i")
