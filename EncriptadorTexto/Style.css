@@ -2,8 +2,76 @@ body {
   background-color: #f3f5fc;
 }
 
+.logo {
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+}
+
 #encriptar {
+  background-color: #0a3871;
+  color: white;
+  border-color: #0a3871;
+  border-radius: 0.8em;
+  height: 3.2em;
+  width: 12em;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#encriptar:hover {
+  background-color: #4575db;
 }
 
 #desencriptar {
+  background-color: #9b9797;
+  color: #0a3871;
+  border-color: #9b9797;
+  border-radius: 0.8em;
+  height: 3.2em;
+  width: 12em;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#desencriptar:hover {
+  background-color: darkgrey;
+}
+
+.textos {
+  display: flex;
+  align-items: stretch;
+  margin-inline: 6em;
+  justify-content: space-between;
+}
+
+#mensaje {
+  background-color: #f3f5fc;
+  color: #0a3871;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.output {
+  width: auto;
+}
+
+.entrada {
+  margin-left: 10em;
+}
+
+#salida {
+  height: 28.3em;
+  right: 25%;
+  background-color: white;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.botones {
+  margin-left: 30%;
+  margin-top: 2.5em;
 }

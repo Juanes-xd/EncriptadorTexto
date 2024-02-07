@@ -8,6 +8,7 @@ btnEncrypt.addEventListener("click", function (event) {
   var texto = document.getElementById("mensaje").value;
   texto = encriptador(texto);
   document.getElementById("salida").value = texto;
+  document.getElementById("mensaje").value = "";
 });
 
 btnDecrypt.addEventListener("click", function (event) {
@@ -15,6 +16,7 @@ btnDecrypt.addEventListener("click", function (event) {
   var texto = document.getElementById("mensaje").value;
   texto = desencriptar(texto);
   document.getElementById("salida").value = texto;
+  document.getElementById("mensaje").value = "";
 });
 
 const encriptador = (text) => {
