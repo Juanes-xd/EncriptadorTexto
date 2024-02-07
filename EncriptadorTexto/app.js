@@ -1,16 +1,18 @@
-var btnEncrypt = document.getElementsByClassName("encriptar");
-var btnDecrypt = document.getElementsByClassName("desencriptar");
+var btnEncrypt = document.getElementById("encriptar");
+var btnDecrypt = document.getElementById("desencriptar");
+var originalText = document.getElementById("mensaje");
+var modifiedText = document.getElementById("salid");
 
 btnEncrypt.addEventListener("click", function (event) {
   event.preventDefault();
-  var texto = document.getElementsByName("mensaje").value;
+  var texto = document.getElementById("mensaje").value;
   texto = encriptador(texto);
   document.getElementById("salida").value = texto;
 });
 
 btnDecrypt.addEventListener("click", function (event) {
   event.preventDefault();
-  var texto = document.getElementsByName("mensaje").value;
+  var texto = document.getElementById("mensaje").value;
   texto = desencriptar(texto);
   document.getElementById("salida").value = texto;
 });
@@ -51,8 +53,6 @@ function desencriptar(text) {
     .replace(/(ufat)/gi, "u");
   return result;
 }
-
-console.log(prueba("gaitober"));
 
 //console.log(desencriptar("gaitober"));
 
