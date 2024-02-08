@@ -55,7 +55,13 @@ body {
 }
 
 .output {
-  width: auto;
+  position: relative;
+}
+
+#muñeco {
+  position: absolute;
+  top: 1.3em;
+  left: 0.4em;
 }
 
 .entrada {
