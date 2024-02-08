@@ -1,7 +1,7 @@
 var btnEncrypt = document.getElementById("encriptar");
 var btnDecrypt = document.getElementById("desencriptar");
 var originalText = document.getElementById("mensaje");
-var modifiedText = document.getElementById("salid");
+var modifiedText = document.getElementById("salida");
 
 btnEncrypt.addEventListener("click", function (event) {
   event.preventDefault();

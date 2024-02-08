@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f5fc;
+  background-color: #d6def8;
 }
 
 .logo {
@@ -14,7 +14,7 @@ body {
   border-color: #0a3871;
   border-radius: 0.8em;
   height: 3.2em;
-  width: 12em;
+  width: 14em;
   border-style: solid;
   cursor: pointer;
 }
@@ -29,7 +29,7 @@ body {
   border-color: #9b9797;
   border-radius: 0.8em;
   height: 3.2em;
-  width: 12em;
+  width: 14em;
   border-style: solid;
   cursor: pointer;
 }
@@ -38,7 +38,7 @@ body {
   background-color: darkgrey;
 }
 
-.textos {
+.texts {
   display: flex;
   align-items: stretch;
   margin-inline: 6em;
@@ -46,11 +46,12 @@ body {
 }
 
 #mensaje {
-  background-color: #f3f5fc;
+  background-color: #d6def8;
   color: #0a3871;
   border: none;
   outline: none;
   resize: none;
+  font-weight: bolder;
 }
 
 .output {
