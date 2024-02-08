@@ -1,7 +1,7 @@
 var btnEncrypt = document.getElementById("encriptar");
 var btnDecrypt = document.getElementById("desencriptar");
 var originalText = document.getElementById("mensaje");
-var modifiedText = document.getElementById("salid");
+var modifiedText = document.getElementById("salida");
 
 btnEncrypt.addEventListener("click", function (event) {
   event.preventDefault();
@@ -9,6 +9,7 @@ btnEncrypt.addEventListener("click", function (event) {
   texto = encriptador(texto);
   document.getElementById("salida").value = texto;
   document.getElementById("mensaje").value = "";
+  document.getElementById("muñeco").style.display = "none";
 });
 
 btnDecrypt.addEventListener("click", function (event) {
@@ -17,6 +18,7 @@ btnDecrypt.addEventListener("click", function (event) {
   texto = desencriptar(texto);
   document.getElementById("salida").value = texto;
   document.getElementById("mensaje").value = "";
+  document.getElementById("muñeco").style.display = "none";
 });
 
 const encriptador = (text) => {
