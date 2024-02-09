@@ -82,3 +82,14 @@ body {
   margin-left: 30%;
   margin-top: 2.5em;
 }
+
+@media screen and (max-width: 896px) {
+  .texts {
+    margin-inline: 3em;
+    flex-wrap: wrap;
+  }
+  .logo,
+  .entrada {
+    margin-left: auto;
+  }
+}
