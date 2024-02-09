@@ -24,9 +24,9 @@ body {
 }
 
 #desencriptar {
-  background-color: #9b9797;
+  background-color: #d6def8;
   color: #0a3871;
-  border-color: #9b9797;
+  border-color: #0a3871;
   border-radius: 0.8em;
   height: 3.2em;
   width: 14em;
@@ -35,7 +35,7 @@ body {
 }
 
 #desencriptar:hover {
-  background-color: darkgrey;
+  background-color: rgb(189, 201, 214);
 }
 
 .texts {
@@ -91,5 +91,25 @@ body {
   .logo,
   .entrada {
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .texts {
+    margin-inline: 13em;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .logo,
+  .entrada {
+    margin-left: auto;
+  }
+  .botones {
+    margin-bottom: 3em;
+    margin-inline-start: auto;
+    width: auto;
+  }
+  .text-input {
+    width: 90%;
   }
 }
