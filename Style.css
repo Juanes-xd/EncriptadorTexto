@@ -94,7 +94,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1300px) {
   .texts {
     margin-inline: 13em;
     flex-wrap: wrap;
